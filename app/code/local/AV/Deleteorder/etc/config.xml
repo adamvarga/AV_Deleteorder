@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <AV_Deleteorder>
+            <version>1.0.0</version>
+        </AV_Deleteorder>
+    </modules>
+    <global>
+        <blocks>
+            <av_deleteorder>
+                <class>AV_Deleteorder_Block</class>
+            </av_deleteorder>
+        </blocks>
+        <models>
+            <av_deleteorder>
+                <class>AV_Deleteorder_Model</class>
+            </av_deleteorder>
+        </models>
+        <helpers>
+            <av_deleteorder>
+                <class>AV_Deleteorder_Helper</class>
+            </av_deleteorder>
+        </helpers>
+        <events>
+            <admin_system_config_changed_section_av_deleteorder>
+                <observers>
+                    <av_deleteorder>
+                        <type>singleton</type>
+                        <class>AV_Deleteorder_Model_Observer</class>
+                        <method>deleteOrder</method>
+                    </av_deleteorder>
+                </observers>
+            </admin_system_config_changed_section_av_deleteorder>
+        </events>
+    </global>
+</config>

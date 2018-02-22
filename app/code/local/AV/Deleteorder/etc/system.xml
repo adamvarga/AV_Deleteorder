@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <av_deleteorder translate="label">
+            <label>AV_Deleteorder</label>
+            <sort_order>150</sort_order>
+        </av_deleteorder>
+    </tabs>
+    <sections>
+        <av_deleteorder translate="label" module="adminhtml">
+            <label>Config</label>
+            <tab>av_deleteorder</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>General</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <order translate="label comment">
+                            <label>Order id</label>
+                            <comment><![CDATA[Which order should be deleted / Example: Comma separated list: <br>10001, 10002, 10003]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </order>
+                    </fields>
+                </general>
+            </groups>
+        </av_deleteorder>
+    </sections>
+</config>
